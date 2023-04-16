@@ -21,7 +21,9 @@ section, summary, time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  text-decoration: none;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -2271,3 +2273,8 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+/* Additional classes */
+
+ .is-layout-flex .blocksAlignment {
+  margin: 0 0 2em;
+}

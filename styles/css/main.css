@@ -1485,7 +1485,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"],
 button,
-.button {
+.button, .read-more-btn {
   -moz-appearance: none;
   -webkit-appearance: none;
   -ms-appearance: none;
@@ -2278,3 +2278,8 @@ button,
  .is-layout-flex .blocksAlignment {
   margin: 0 0 2em;
 }
+
+.wrapp-btn-more {
+  margin-top: 50px;
+}
+

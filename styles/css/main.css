@@ -2225,7 +2225,7 @@ button,
       text-decoration: none;
       -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
       position: relative; }
-      #menu ul a.opener:before, #menu ul span.opener:before {
+    #menu>ul>li.has-child:before {
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
         display: inline-block;
@@ -2236,7 +2236,7 @@ button,
         text-transform: none !important;
         font-family: 'Font Awesome 5 Free';
         font-weight: 900; }
-      #menu ul a.opener:before, #menu ul span.opener:before {
+    #menu>ul>li.has-child:before {
         -moz-transition: color 0.2s ease-in-out, -moz-transform 0.2s ease-in-out;
         -webkit-transition: color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
         -ms-transition: color 0.2s ease-in-out, -ms-transform 0.2s ease-in-out;
@@ -2247,9 +2247,9 @@ button,
         right: 0; }
       #menu ul a.opener:hover:before, #menu ul span.opener:hover:before {
         color: #f56a6a; }
-      #menu ul a.opener.active + ul, #menu ul span.opener.active + ul {
+      #menu>ul>li.has-child.active>a+ul.wp-block-navigation__submenu-container {
         display: block; }
-      #menu ul a.opener.active:before, #menu ul span.opener.active:before {
+      #menu>ul>li.has-child.active:before {
         -moz-transform: rotate(-180deg);
         -webkit-transform: rotate(-180deg);
         -ms-transform: rotate(-180deg);

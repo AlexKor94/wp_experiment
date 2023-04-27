@@ -1,0 +1,47 @@
+<!-- wp:group {"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","justifyContent":"stretch"}} -->
+<div id="wrapper" class="wp-block-group">
+  <!-- wp:group {"layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","justifyContent":"center"}} -->
+  <div id="main" class="wp-block-group">
+    <!-- wp:group {"className":"inner","layout":{"type":"flex","orientation":"vertical","flexWrap":"nowrap","justifyContent":"stretch"}} -->
+    <div class="wp-block-group inner">
+      <!-- wp:template-part {"slug":"header","theme":"apriltwentythree"} /-->
+
+      <!-- wp:query {"queryId":26,"query":{"perPage":6,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"exclude","inherit":true},"displayLayout":{"type":"flex","columns":3}} -->
+      <div class="wp-block-query">
+        <!-- wp:post-template -->
+        <!-- wp:group {"style":{"spacing":{"padding":{"top":"30px","right":"30px","bottom":"30px","left":"30px"}}},"layout":{"inherit":false}} -->
+        <div
+          class="wp-block-group"
+          style="
+            padding-top: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+            padding-left: 30px;
+          "
+        >
+          <!-- wp:post-title {"isLink":true} /-->
+
+          <!-- wp:post-excerpt /-->
+
+          <!-- wp:post-date /-->
+        </div>
+        <!-- /wp:group -->
+        <!-- /wp:post-template -->
+
+        <!-- wp:query-no-results -->
+        <!-- wp:paragraph {"placeholder":"Add text or blocks that will display when a query returns no results.","fontSize":"x-large"} -->
+        <p class="has-x-large-font-size">
+          Unfortunately, we didn't find anything!
+        </p>
+        <!-- /wp:paragraph -->
+        <!-- /wp:query-no-results -->
+      </div>
+      <!-- /wp:query -->
+    </div>
+    <!-- /wp:group -->
+  </div>
+  <!-- /wp:group -->
+
+  <!-- wp:template-part {"slug":"sidebar","theme":"apriltwentythree"} /-->
+</div>
+<!-- /wp:group -->

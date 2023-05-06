@@ -15,3 +15,10 @@ function ap_enqueue()
   wp_enqueue_script('util-script', get_template_directory_uri() . '/js/util.js', array('jquery'), '1.0', true);
   wp_enqueue_script('main-script', get_template_directory_uri() . '/js/main.js', array('jquery'), '1.0', true);
 }
+
+function my_theme_register_menus()
+{
+  register_nav_menus(array(
+    'sub-menu' => __('Sub Menu', 'Test April Twenty-Three')
+  ));
+}

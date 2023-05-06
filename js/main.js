@@ -234,7 +234,7 @@
 	});
 
 	// Menu.
-	var $menu = $('#menu'),
+	var $menu = $('.unique-menu'),
 		$menu_openers = $menu.children('ul').find('.has-child');
 
 	// Openers.
